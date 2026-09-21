@@ -15,7 +15,6 @@
   --accent-1: #8b5cf6;
   --accent-2: #06b6d4;
   --photo-ring: #050510;
-  --particle-opacity: 0.85;
 }
 
 [data-theme="light"] {
@@ -31,11 +30,9 @@
   --accent-1: #7c3aed;
   --accent-2: #0891b2;
   --photo-ring: #ffffff;
-  --particle-opacity: 0.55;
 }
 
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
-
 html { scroll-behavior:smooth; }
 
 body {
@@ -46,8 +43,7 @@ body {
 }
 
 #bg-canvas {
-  position:fixed;
-  top:0; left:0;
+  position:fixed; top:0; left:0;
   width:100%; height:100%;
   z-index:-1;
   transition:opacity .4s ease;
