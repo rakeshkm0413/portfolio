@@ -23,21 +23,13 @@ themeToggle.addEventListener('click', () => {
 const canvas = document.getElementById('bg-canvas');
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
+  75, window.innerWidth / window.innerHeight, 0.1, 1000
 );
-const renderer = new THREE.WebGLRenderer({
-  canvas,
-  alpha: true,
-  antialias: true
-});
+const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-// ---------- Particles ----------
 const particlesGeometry = new THREE.BufferGeometry();
 const count = 2500;
 const positions = new Float32Array(count * 3);
@@ -61,10 +53,8 @@ const particlesMaterial = new THREE.PointsMaterial({
 
 const particles = new THREE.Points(particlesGeometry, particlesMaterial);
 scene.add(particles);
-
 camera.position.z = 6;
 
-// ---------- Theme-aware particles ----------
 function updateParticlesForTheme(theme) {
   if (theme === 'light') {
     particlesMaterial.opacity = 0.55;
@@ -77,14 +67,12 @@ function updateParticlesForTheme(theme) {
 }
 updateParticlesForTheme(savedTheme);
 
-// ---------- Mouse parallax ----------
 let mouseX = 0, mouseY = 0;
 document.addEventListener('mousemove', (e) => {
   mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
   mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
 });
 
-// ---------- Animate loop ----------
 const clock = new THREE.Clock();
 function animate() {
   requestAnimationFrame(animate);
@@ -101,7 +89,6 @@ function animate() {
 }
 animate();
 
-// ---------- Resize ----------
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -114,10 +101,7 @@ window.addEventListener('resize', () => {
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('navLinks');
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
+menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 document.querySelectorAll('.nav-links a').forEach(link =>
   link.addEventListener('click', () => navLinks.classList.remove('open'))
 );
@@ -137,7 +121,6 @@ const revealObserver = new IntersectionObserver(
   },
   { threshold: 0.15 }
 );
-
 revealElements.forEach(el => revealObserver.observe(el));
 
 /* =========================================================
@@ -168,7 +151,6 @@ function typeLoop() {
       textIndex = (textIndex + 1) % texts.length;
     }
   }
-
   setTimeout(typeLoop, deleting ? 40 : 80);
 }
 typeLoop();
