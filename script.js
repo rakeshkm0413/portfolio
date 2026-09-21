@@ -156,7 +156,7 @@ function typeLoop() {
 typeLoop();
 
 /* =========================================================
-   6. CONTACT FORM (AJAX submit to Formspree)
+   6. CONTACT FORM (Formspree → rakeshkumarmistri010413@gmail.com)
    ========================================================= */
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
