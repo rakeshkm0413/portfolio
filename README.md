@@ -1,20 +1,16 @@
 # Rakesh Kumar Mistri — 3D Portfolio
 
-A 3D animated personal portfolio website built with **HTML, CSS, JavaScript, and Three.js**.
+Modern 3D animated portfolio | HTML + CSS + JS + Three.js
+Light/Dark theme + working contact form (Formspree).
 
-🔗 **Live Demo:** https://<your-username>.github.io/rakesh-portfolio/
+🔗 Live: https://rakeshkm0413.github.io/portfolio/
 
 ## ✨ Features
 - 3D particle background (Three.js)
-- 3D floating profile photo with rotating ring
-- Scroll reveal animations
-- Typing text animation
-- Fully responsive design
-- Dark purple/cyan gradient theme
+- Light/Dark theme (saves in browser)
+- 3D floating profile photo
+- Typing animation + scroll reveal
+- 6 real projects linked to GitHub
+- Contact form → Gmail via Formspree
 
-## 📦 Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/<your-username>/rakesh-portfolio.git
-cd rakesh-portfolio
+## 📁 Structure
