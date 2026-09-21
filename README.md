@@ -3,7 +3,7 @@
 Modern 3D animated portfolio built with HTML + CSS + JS + Three.js.
 Light/Dark theme + working contact form via Formspree → rakeshkumarmistri010413@gmail.com
 
-🔗 Live: https://rakeshkm0413.github.io/rakesh-portfolio/
+🔗 Live: https://rakeshkm0413.github.io/portfolio/
 
 ## ✨ Features
 - 3D particle background (Three.js)
