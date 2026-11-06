@@ -14,7 +14,7 @@ Light/Dark theme + working contact form via Formspree.
 - Contact form → Gmail via Formspree
 
 ## 💼 Current Role
-Management Information System Executive — Vedantu Innovations Private Limited, Bengaluru (Oct 2026 – Present)
+MIS Executive — Vedantu Innovations Private Limited, Bengaluru (Oct 2026 – Present)
 
 ## 📁 Structure
 ```
